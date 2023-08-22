@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WeatherX</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<script>
+  function toggleTheme() {
+    var body = document.body;
+    if (body.classList.contains("dark-theme")) {
+      setLightTheme();
+    } else {
+      setDarkTheme();
+    }
+  }
+
+  function setDarkTheme() {
+    document.body.style.backgroundColor = "#111";
+  }
+
+  function setLightTheme() {
+    document.body.style.backgroundColor = "#87CEEB";
+  }
+</script>
+<div class="toggle-container">
+  <label class="theme-switch" for="themeToggle">
+    <input type="checkbox" id="themeToggle" onclick="toggleTheme()">
+    <span class="slider round"></span>
+  </label>
+</div>
+
+
+
+</head>
+<body>
+  <div class="title">
+    <h1>WeatherX</h1>
+    <p>Your Weather Buddy</p>
+  </div>
+  <div class="sun">&#9728;</div>
+  <div class="cloud">&#9729;</div>
+  <div class="container">
+    <input type="text" id="cityInput" placeholder="Enter a town">
+    <button onclick="getWeather()">Get Weather</button>
+  </div>
+  <div class="temperature-box" id="temperatureBox">
+    <p id="temperatureInfo"></p>
+  </div>
+  
+<footer>Designed and Developed by Naman Lamba</footer>
+  <script src="script.js"></script>
+</body>
+</html>
