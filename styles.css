@@ -138,6 +138,7 @@ footer {
   max-height: 300px; /* Adjust the maximum height as needed */
   overflow-y: auto; /* Add vertical scrollbar if content overflows */
   white-space: pre-line; /* Preserve new lines and white spaces */
+  margin-bottom: 40px;
 }
 
 
