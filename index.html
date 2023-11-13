@@ -20,6 +20,11 @@
   function setLightTheme() {
     document.body.style.backgroundColor = "#87CEEB";
   }
+  function handleEnterKey(event) {
+      if (event.key === 'Enter') {
+        getWeather();
+      }
+    }
 </script>
 <div class="toggle-container">
   <label class="theme-switch" for="themeToggle">
