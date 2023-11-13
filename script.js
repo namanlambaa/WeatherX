@@ -12,6 +12,12 @@ function setDarkTheme() {
   document.body.classList.add("dark-theme");
 }
 
+function handleEnterKey(event) {
+  if (event.key === 'Enter') {
+    getWeather();
+  }
+}
+
 function setLightTheme() {
   document.body.classList.remove("dark-theme");
   document.body.classList.add("light-theme");
